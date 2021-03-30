@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "rymConsulting"
+  "defaultProject": "rymConsulting",
+  "cli": {
+    "analytics": "703b6d5c-148e-4735-b905-753ef0130d71"
+  }
 }
