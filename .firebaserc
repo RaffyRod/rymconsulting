@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "rymconsulting-a01e2": {
+      "hosting": {
+        "rymConsulting": [
+          "rymconsulting-a01e2"
+        ]
+      }
+    }
+  }
+}
