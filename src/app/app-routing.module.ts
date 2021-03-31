@@ -7,14 +7,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { AppComponent } from './app.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 const routes: Routes = [
-  { path: 'inicio', component: InicioComponent },
   { path: 'clientes', component: ClientesComponent },
-  { path: 'footer', component: FooterComponent },
-  { path: 'header', component: HeaderComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'servicios', component: ServiciosComponent },
+  { path: 'contacto', component: ContactoComponent },
   { path: '**', component: InicioComponent },
 ];
 

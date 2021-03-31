@@ -1,0 +1,12 @@
+span{
+  font-weight: bold;
+  color: #295F9F;
+}
+
+.card{
+  background-color: #F7F7F7;
+
+}
+.card-body{
+  padding: 50px;
+}

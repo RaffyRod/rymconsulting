@@ -1,24 +1,50 @@
-<!-- <nav class="navbar navbar-expand-sm bg-light"> -->
 
-  <!-- Links -->
-  <!-- <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 3</a>
-    </li>
-  </ul> -->
 
-<!-- </nav> -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-custom-2">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" [routerLink]="['/']">RYM Consulting</a>
 
-<nav class="navbar navbar-dark sticky-top bg-custom-2">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
 
-  <div class="container">
-    <a class="navbar-brand" href="#a">RYM Consulting</a>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/']">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/nosotros']">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/servicios']">Servicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/clientes']">Clientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+        </li>
+        <!-- Navbar dropdown -->
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
   </div>
+  <!-- Container wrapper -->
 </nav>
-<img src="gs://rymconsulting-a01e2.appspot.com/imagenes/RYMLOGO.png" alt="">
+<!-- Navbar -->
