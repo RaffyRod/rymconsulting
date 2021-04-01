@@ -10,3 +10,28 @@ span{
 .card-body{
   padding: 50px;
 }
+
+.imgshow{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  width: 180px;
+  height: 130px;
+}
+
+.imgshowValores{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  width: 80px;
+  height: 70px;
+}
+
+.scndDiv{
+  border-bottom: 2px rgb(219, 219, 219) solid;
+
+}

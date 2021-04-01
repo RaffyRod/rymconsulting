@@ -1,8 +1,5 @@
-<!-- Footer -->
 <footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
   <div class="container p-4">
-    <!-- Section: Social media -->
     <section class="mb-4">
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-facebook-f"></i
@@ -28,18 +25,26 @@
         ><i class="fab fa-github"></i
       ></a>
     </section>
-    <!-- Section: Social media -->
-
-
-
-    <!-- Section: Links -->
     <section class="">
-      <!--Grid row-->
       <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Servicios</h5>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0" *ngFor="let item of enlaces">
+          <h5 class="text-uppercase">{{item.titulo}}</h5>
 
+          <ul class="list-unstyled mb-0">
+            <!-- <li class="text-white" *ngFor="let enlace of item.enlaces">{{enlace.titulo}}</li> -->
+            <!-- <li>
+              <a href="https://www.indotel.gob.do/" class="text-white">INDOTEL.</a>
+            </li> -->
+            <!-- <li>
+              <a href="https://www.onapi.gov.do/" class="text-white">ONAPI.</a>
+            </li>
+            <li>
+              <a href="https://presidencia.gob.do/" class="text-white">Presidencia de la Republica Dominicana.</a>
+            </li> -->
+          </ul>
+        </div>
+        <!-- <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Servicios</h5>
           <ul class="list-unstyled mb-0 ">
             <li>
               <a href="#!" class="text-white">Auditoría de infraestructura. </a>
@@ -58,9 +63,6 @@
             </li>
           </ul>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Sitios de Interes</h5>
 
@@ -76,10 +78,6 @@
             </li>
           </ul>
         </div>
-        <!--Grid column-->
-
-
-        <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Contactos</h5>
 
@@ -94,19 +92,15 @@
               <a href="#!" class="text-white">michaelrafaelventura01@gmail.com</a>
             </li>
           </ul>
-        </div>
-        <!--Grid column-->
+        </div> -->
       </div>
-      <!--Grid row-->
     </section>
-    <!-- Section: Links -->
   </div>
-  <!-- Grid container -->
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright:
-    <a class="text-white" href="rymconsulting.web.app">rymconsulting.web.app</a>
+    © {{getYear()}} Copyright:
+    <a class="text-white" href="{{paginadata.url}}">{{paginadata.url}}</a>
   </div>
   <!-- Copyright -->
 </footer>

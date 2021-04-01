@@ -5,7 +5,7 @@
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Navbar brand -->
-    <a class="navbar-brand" [routerLink]="['/']">RYM Consulting</a>
+    <a class="navbar-brand" [routerLink]="['/']">{{data.titulo}}</a>
 
     <!-- Toggle button -->
     <button
@@ -24,20 +24,8 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/']">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/nosotros']">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/servicios']">Servicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/clientes']">Clientes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+        <li class="nav-item" *ngFor="let item of enlaces">
+          <a class="nav-link" [routerLink]=item.enlace>{{item.nombre}}</a>
         </li>
         <!-- Navbar dropdown -->
       </ul>
