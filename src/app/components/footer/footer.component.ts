@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
   paginadata:any;
 
   constructor(private datafooter: DatapaginaService) {
-    this.data = datafooter.infoFooter();
+    this.data = this.datafooter.infoFooter();
     this.enlaces = new Array<any>();
     this.paginadata = datafooter.infoPaginaData();
   }
@@ -29,7 +29,6 @@ export class FooterComponent implements OnInit {
   }
 
   procesarEnlaces(){
-    let total = 0;
     for(let data of this.data){
       this.enlaces.push({
         titulo:data.titulo,

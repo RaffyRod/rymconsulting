@@ -1,6 +1,6 @@
 <div class="card">
-  <div class="card-header">
-    Nuestros Servicios en <span>RYM Consulting</span>
+  <div class="card-header h5">
+    {{data.page.titulo.slice(0,21)}} <span>{{data.page.titulo.slice(22,36)}}</span>
   </div>
   <div class="card-body">
     <div class="row text-justify">
@@ -8,94 +8,28 @@
         <div class="col-2">
           <img
             class="img-thumbnail mx-auto img-fluid m-4"
-            src="https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FRYMLOGO.png?alt=media&token=5d41d6dc-27ac-4189-9ab7-b8cf225e6375" alt="">
+            [src]=data.page.imagen alt="">
         </div>
         <div class="col-10 mt-4 ">
           <p>
-            Contamos con servicios de seguridad y auditoría informática cubriendo los elementos más propensos a ser vulnerados en cuanto a la seguridad y privacidad de los datos en una empresa.
+            {{data.page.descripcion}}
           </p>
         </div>
       </div>
-
       <div class="row m-2">
         <div class="col-12 text-center mb-5 mt-2 frstDiv">
-          <p class="h5">ENTRE NUESTROS SERVICIOS TENEMOS:</p>
+          <p class="h5">{{data.page.subtitulo}}</p>
         </div>
-        <div class="col-6 row p-4">
-          <div class="col-4">
+        <div class="col-6 row p-4" *ngFor="let item of data.opciones">
+          <div id ="{{item.id}}" class="col-4">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FINTRAESTRUCTURA.jpg?alt=media&token=954c1c47-95cd-4190-8d54-f279f1be48e2"
+              [src]="item.imagen"
               class="img-thumbnail mx-auto img-fluid m-4 imgshow"
             >
           </div>
           <div class="col-8 scndDiv mt-4">
-            <p class="font-weight-bold">Auditoría de Infraestructura</p>
-            <p class="h7">La observación es el punto de partida en los diferentes tipos de auditoria en este caso particular nos basamos en la observación de la infraestructura y así logramos identificar cualquier aspecto que haya sido iniciado sin una conclusión concreta, debilidades en el sistema que puedan ponerlos en un estado vulnerable. Basado en esto podemos ayudar a nuestros clientes a obtener mejores resultados en la configuración de la infraestructura de la empresa</p>
-          </div>
-        </div>
-        <div class="col-6 row p-4 mb-4">
-          <div class="col-4">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FINTRAESTRUCTURA.jpg?alt=media&token=954c1c47-95cd-4190-8d54-f279f1be48e2"
-              class="img-thumbnail mx-auto img-fluid m-4 imgshow"
-            >
-          </div>
-          <div class="col-8 scndDiv mt-4">
-            <p class="font-weight-bold">
-              Auditoria de Riesgos Informaticos
-            </p>
-            <p class="h7">
-              Si bien es cierto que no se pueden reducir los riegos al 100% siempre es importante implementar planes que logren reducirlo en el mayor grado posible, garantizando así la protección de la privacidad de los datos.
-            </p>
-
-          </div>
-        </div>
-        <div class="col-6 row p-4 mt-4">
-          <div class="col-4">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FINTRAESTRUCTURA.jpg?alt=media&token=954c1c47-95cd-4190-8d54-f279f1be48e2"
-              class="img-thumbnail mx-auto img-fluid m-4 imgshow"
-            >
-          </div>
-          <div class="col-8 scndDiv mt-4">
-            <p class="font-weight-bold">
-              Auditoria de Continuidad de Caidas
-            </p>
-            <p class="h7">
-              Evitamos perdida de dinero, tiempo y recursos, garantizando que los sistemas estarán disponibles en todo momento, ofreciendo redundancia que ayuden a conservar la productividad de la empresa.
-            </p>
-          </div>
-        </div>
-        <div class="col-6 row p-4 mt-4">
-          <div class="col-4">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FINTRAESTRUCTURA.jpg?alt=media&token=954c1c47-95cd-4190-8d54-f279f1be48e2"
-              class="img-thumbnail mx-auto img-fluid m-4 imgshow"
-            >
-          </div>
-          <div class="col-8 scndDiv mt-4">
-            <p class="font-weight-bold">
-              Auditoria de Garantia de Eficiencia de Red
-            </p>
-            <p class="h7">
-              Agilizar la conectividad mediante ajustes dentro del sistema que sirvan de impulso para evitar interrupciones
-            </p>
-          </div>
-        </div>
-        <div class="col-6 row p-4 mt-4">
-          <div class="col-4">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FINTRAESTRUCTURA.jpg?alt=media&token=954c1c47-95cd-4190-8d54-f279f1be48e2"
-              class="img-thumbnail mx-auto img-fluid m-4 imgshow"
-            >
-          </div>
-          <div class="col-8 scndDiv mt-4">
-            <p class="font-weight-bold">
-              Seguridad de Plataformas
-            </p>
-            <p class="h7">
-              implementaciones que ayudan a las empresas a mantener seguros sus usuarios y aplicaciones, y por medio de las misma la protección de la empresa.
-            </p>
+            <p class="font-weight-bold">{{item.titulo}}</p>
+            <p class="h7">{{item.descripcion}}</p>
           </div>
         </div>
       </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DatapaginaService } from 'src/app/Servicios/datapagina.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-servicios',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servicios.component.css']
 })
 export class ServiciosComponent implements OnInit {
-
-  constructor() { }
+  data:any;
+  constructor(
+    private dataservicios: DatapaginaService,
+    router: Router) {
+    this.data = dataservicios.infoServicios();
+  }
 
   ngOnInit(): void {
   }

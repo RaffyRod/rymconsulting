@@ -1,1 +1,67 @@
-<p>contacto works!</p>
+<div class="card">
+  <div class="card-header h5">
+    {{data.data.titulo.slice(0,14)}} <span>{{data.data.titulo.slice(15,30)}}</span>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-4">
+        <img
+          class="img-thumbnail mx-auto img-fluid m-4" [src]=data.data.image alt="">
+      </div>
+      <div class="col-8 text-justify mt-4">
+        <section class="mb-4">
+          <div class="row">
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="md-form  mt-2">
+                        <input type="text" formControlName="control" placeholder="Su Nombre" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="md-form  mt-2">
+                        <input type="text" id="email"  placeholder="Su Correo" name="email" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form mt-2">
+                        <input type="text" id="subject" placeholder="Asunto de Correo" name="subject" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form  mt-2 mb-2">
+                        <textarea placeholder="Su Mensaje" type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="text-center text-md-left">
+                  <a (click) = "enviarEmail()" class="btn btn-primary btn-block" >Enviar</a>
+                </div>
+              <div class="status"></div>
+            </div>
+            <div class="col-md-3 text-center">
+              <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt"></i>
+                  <p>{{data.contacto.direccion}}</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4"></i>
+                  <p>{{data.contacto.telefono}}</p>
+                </li>
+                <li><i class="fas fa-envelope mt-4"></i>
+                  <p>{{data.contacto.email}}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

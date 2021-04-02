@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatapaginaService } from 'src/app/Servicios/datapagina.service';
 
 @Component({
   selector: 'app-clientes',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientesComponent implements OnInit {
 
-  constructor() { }
+  data:any;
+  constructor(private dataclientes: DatapaginaService) {
+    this.data = dataclientes.infoClientes();
+  }
 
   ngOnInit(): void {
+  }
+
+  ir(enlace:string){
+    window.location.href = enlace;
   }
 
 }

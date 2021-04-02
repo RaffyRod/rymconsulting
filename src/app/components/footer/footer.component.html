@@ -1,29 +1,6 @@
 <footer class="bg-dark text-center text-white">
   <div class="container p-4">
     <section class="mb-4">
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-twitter"></i
-      ></a>
-
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-google"></i
-      ></a>
-
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
-
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-github"></i
-      ></a>
     </section>
     <section class="">
       <div class="row">
@@ -31,76 +8,19 @@
           <h5 class="text-uppercase">{{item.titulo}}</h5>
 
           <ul class="list-unstyled mb-0">
-            <!-- <li class="text-white" *ngFor="let enlace of item.enlaces">{{enlace.titulo}}</li> -->
-            <!-- <li>
-              <a href="https://www.indotel.gob.do/" class="text-white">INDOTEL.</a>
-            </li> -->
-            <!-- <li>
-              <a href="https://www.onapi.gov.do/" class="text-white">ONAPI.</a>
-            </li>
-            <li>
-              <a href="https://presidencia.gob.do/" class="text-white">Presidencia de la Republica Dominicana.</a>
-            </li> -->
-          </ul>
-        </div>
-        <!-- <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Servicios</h5>
-          <ul class="list-unstyled mb-0 ">
-            <li>
-              <a href="#!" class="text-white">Auditoría de infraestructura. </a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Auditoria de Riezgos Informaticos.</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Auditoria de Continuidad de Caidas.</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Auditoria de Garantia de Eficiencia de Red.</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Seguridad de Plataformas.</a>
+            <li class="text-white" *ngFor="let enlace of item.enlaces.titulos; let i = index">
+              <a href="{{item.enlaces.enlaces[i]}}" class="text-white">{{enlace}}</a>
             </li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Sitios de Interes</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="https://www.indotel.gob.do/" class="text-white">INDOTEL.</a>
-            </li>
-            <li>
-              <a href="https://www.onapi.gov.do/" class="text-white">ONAPI.</a>
-            </li>
-            <li>
-              <a href="https://presidencia.gob.do/" class="text-white">Presidencia de la Republica Dominicana.</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Contactos</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a class="text-white">raffy.a.rodriguez@gmail.com</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">yanelaaraujo12@gmail.com</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">michaelrafaelventura01@gmail.com</a>
-            </li>
-          </ul>
-        </div> -->
       </div>
     </section>
   </div>
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © {{getYear()}} Copyright:
-    <a class="text-white" href="{{paginadata.url}}">{{paginadata.url}}</a>
+    © {{getYear()}} Copyright
+    <a class="text-white"  href="{{paginadata.url }}" target="_blank">{{paginadata.nombre}}</a>
   </div>
   <!-- Copyright -->
 </footer>

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
+import { DatapaginaService } from 'src/app/Servicios/datapagina.service';
 
 @Component({
   selector: 'app-contacto',
@@ -6,10 +9,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent implements OnInit {
+  data:any;
 
-  constructor() { }
+  constructor(
+    private datacontacto: DatapaginaService,
+    private toastr: ToastrService
+  ) {
+    this.data = datacontacto.infoContacto();
+  }
 
   ngOnInit(): void {
+  }
+
+
+
+
+  enviarEmail(){
+    alert("Correo Enviado")
   }
 
 }
