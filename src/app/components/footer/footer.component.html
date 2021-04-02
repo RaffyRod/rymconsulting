@@ -4,9 +4,8 @@
     </section>
     <section class="">
       <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0" *ngFor="let item of enlaces">
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 mx-auto" *ngFor="let item of enlaces">
           <h5 class="text-uppercase">{{item.titulo}}</h5>
-
           <ul class="list-unstyled mb-0">
             <li class="text-white" *ngFor="let enlace of item.enlaces.titulos; let i = index">
               <a href="{{item.enlaces.enlaces[i]}}" class="text-white">{{enlace}}</a>

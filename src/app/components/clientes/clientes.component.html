@@ -5,36 +5,34 @@
   <div class="card-body">
     <div class="row text-justify">
       <div class="row mb-4 card-header">
-        <div class="col-2">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2">
           <img
             class="img-thumbnail mx-auto img-fluid m-4"
             [src]=data.page.imagen alt="">
         </div>
-        <div class="col-10 mt-4 ">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-10 mt-4 ">
           <p>
             {{data.page.descripcion}}
           </p>
         </div>
       </div>
       <div class="row m-2">
-        <div class="col-12 text-center mb-5 mt-2 frstDiv">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center mb-5 mt-2 frstDiv">
           <p class="h5">{{data.page.subtitulo}}</p>
         </div>
-        <div class="col-6 row p-4 mx-auto" *ngFor="let item of data.opciones">
-          <div class="col-4">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 row p-2 mx-auto" *ngFor="let item of data.opciones">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
             <img
               [src]="item.imagen"
-              class="img-thumbnail mx-auto img-fluid m-4 imgshow"
+              class="img-thumbnail img-fluid m-4 imgshow"
             >
           </div>
-          <div class="col-8 scndDiv mt-4">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 scndDiv mt-4">
             <p class="font-weight-bold">{{item.nombre}}</p>
             <p class="noSpace h9"><small>Sector {{item.sector}}</small></p>
             <p class="h8">{{item.descripcion}}</p>
             <p class="h6 ">{{item.servicio}}</p>
             <button class="btn btn-primary btn-block"  (click)="ir(item.web)">Ir a {{item.nombre}}</button>
-
-
           </div>
         </div>
       </div>

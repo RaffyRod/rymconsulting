@@ -31,7 +31,7 @@ export class DatapaginaService {
         "Agencia de consultores profesionales, la cual se encarga de dar soporte a clientes que pueden ser tanto pequeñas, medianas o grandes empresas.",
         "Somos una empresa auditora con dos años de experiencia en el sector de la informática, fundada en el año 2019, hemos apoyado hasta ahora a algunas empresas garantizándole que estén siempre operando bajo los estándares recomendados basados en la seguridad informática en general: las aplicaciones que maneja, los usuarios, la información, etc.",
         "La confianza que nuestros clientes depositan en nosotros queda satisfecha cuando logramos reducir el impacto negativo que pueden provocar en las empresas los ataques que se pueden producir a los elementos vulnerables de las mismas.",
-        "Estamos comprometidos a siempre bridar un servicio óptimo y oportuno que ayude a mejorar en todo momento el desarrollo de sus operaciones."
+        "Estamos comprometidos a siempre brindar un servicio óptimo y oportuno que ayude a mejorar en todo momento el desarrollo de sus operaciones."
       ],
       image: this.infoPaginaData().imagen
     }
@@ -85,7 +85,7 @@ export class DatapaginaService {
       {
         id: "exelencia",
         titulo: "EXELENCIA",
-        descripcion: "Ante todo, perseverancia para lograr mejoramiento continuo, innovación, liderazgo tratando siempre de superar las expectativas de nuestros clientes y alcanzar los objetivos corporativos.",
+        descripcion: "Ante todo, perseverancia para lograr mejoramiento continuo, innovación y liderazgo, tratando siempre de superar las expectativas de nuestros clientes y alcanzar los objetivos corporativos.",
         imagen: "https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FEXELENCIA.jpeg?alt=media&token=63eed340-5fa8-42af-82cb-d75c5762caed"
       },
     ];
