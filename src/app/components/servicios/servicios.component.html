@@ -20,7 +20,7 @@
         <div class="col-12 text-center mb-5 mt-2 frstDiv">
           <p class="h5">{{data.page.subtitulo}}</p>
         </div>
-        <div class="col-6 row p-4" *ngFor="let item of data.opciones">
+        <div class="col-6 row p-4 mx-auto" *ngFor="let item of data.opciones">
           <div id ="{{item.id}}" class="col-4">
             <img
               [src]="item.imagen"
