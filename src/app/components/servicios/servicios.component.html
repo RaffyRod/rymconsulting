@@ -20,15 +20,15 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center mb-5 mt-2 frstDiv">
           <p class="h5">{{data.page.subtitulo}}</p>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 row p-2 mx-auto" *ngFor="let item of data.opciones">
-          <div id ="{{item.id}}" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 row p-2 mx-auto d-flex justify-content-start" *ngFor="let item of data.opciones">
+          <div id ="{{item.id}}" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
             <img
               [src]="item.imagen"
               class="img-thumbnail img-fluid m-4 imgshow"
             >
           </div>
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 scndDiv mt-4">
-            <p class="font-weight-bold">{{item.titulo}}</p>
+            <p class="font-weight-bold text-center">{{item.titulo}}</p>
             <p class="h7">{{item.descripcion}}</p>
           </div>
         </div>

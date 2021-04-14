@@ -19,7 +19,10 @@ span{
   border-bottom: 1px rgb(219, 219, 219) solid;
 }
 
-
+.option{
+  min-height: 100px;
+  display: flex;
+}
 
 .imgshow{
   margin-left: auto;

@@ -17,7 +17,7 @@ export class DatapaginaService {
     let data: Empresa;
     data = {
       nombre: "RYM Consulting",
-      imagen: "https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FRYMLOGO.png?alt=media&token=5d41d6dc-27ac-4189-9ab7-b8cf225e6375",
+      imagen: "https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FRYM.png?alt=media&token=7680b061-13f3-444a-ac76-25378afa4202",
       url: "https://rymconsulting-a01e2.web.app/"
     }
     return data;
@@ -109,12 +109,6 @@ export class DatapaginaService {
 
     opciones = [
       {
-        id: "infraestructura",
-        titulo: "Auditoría de Infraestructura",
-        descripcion: "La observación es el punto de partida en los diferentes tipos de auditoria en este caso particular nos basamos en la observación de la infraestructura y así logramos identificar cualquier aspecto que haya sido iniciado sin una conclusión concreta, debilidades en el sistema que puedan ponerlos en un estado vulnerable. Basado en esto podemos ayudar a nuestros clientes a obtener mejores resultados en la configuración de la infraestructura de la empresa.",
-        imagen:"https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FINTRAESTRUCTURA.jpg?alt=media&token=954c1c47-95cd-4190-8d54-f279f1be48e2"
-      },
-      {
         id:"riezgo",
         titulo: "Auditoria de Riesgos Informaticos",
         descripcion: "Si bien es cierto que no se pueden reducir los riegos al 100% siempre es importante implementar planes que logren reducirlo en el mayor grado posible, garantizando así la protección de la privacidad de los datos.",
@@ -127,17 +121,30 @@ export class DatapaginaService {
         imagen:"https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FCONTINUIDAD.jpg?alt=media&token=6b4232c0-8a5c-4f54-97a7-ce29009ee00b"
       },
       {
-        id:"garantia",
-        titulo: "Auditoria de Garantia de Eficiencia de Red",
-        descripcion: "Agilizar la conectividad mediante ajustes dentro del sistema que sirvan de impulso para evitar interrupciones.",
-        imagen:"https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FEFICIENCIA.jpg?alt=media&token=439188b4-ca60-42ba-b124-619b42a068a9"
+        id: "infraestructura",
+        titulo: "Auditoría de Infraestructura",
+        descripcion: "En este tipo de auditoria nos basamos en la observación de la infraestructura y así logramos identificar cualquier aspecto que haya sido iniciado sin una conclusión concreta, debilidades en el sistema que puedan ponerlos en un estado vulnerable.",
+        imagen:"https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FINTRAESTRUCTURA.jpg?alt=media&token=954c1c47-95cd-4190-8d54-f279f1be48e2"
       },
       {
         id:"seguridad",
         titulo: "Seguridad de Plataformas",
         descripcion: "Implementaciones que ayudan a las empresas a mantener seguros sus usuarios y aplicaciones, y por medio de las misma la protección de la empresa.",
         imagen:"https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FSEGURIDAD.jpg?alt=media&token=2cf3659a-fd32-4c99-b168-e66342bf8231"
-      }
+      },
+      {
+        id:"garantia",
+        titulo: "Auditoria de Garantia de Eficiencia de Red",
+        descripcion: "Agilizar la conectividad mediante ajustes dentro del sistema que sirvan de impulso para evitar interrupciones.",
+        imagen:"https://firebasestorage.googleapis.com/v0/b/rymconsulting-a01e2.appspot.com/o/imagenes%2FEFICIENCIA.jpg?alt=media&token=439188b4-ca60-42ba-b124-619b42a068a9"
+      },
+      {
+        id:"control",
+        titulo: "Auditoria de Control Interno",
+        descripcion: "El sistema de control interno está entretejido con las actividades operativas de una entidad, y existe por fundamentales razones de negocios. Los controles internos tiene el mayor grado de efectividad cuando ellos, son construidos dentro de la infraestructura de la entidad y son parte de la esencia de la empresa. Ellos deben ser construidos dentro más bien que construidos sobre.",
+        imagen:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsites.google.com%2Fsite%2Frosamartinezacco304%2F_%2Frsrc%2F1491788209228%2Fhome%2Fauditoria.png%3Fheight%3D240%26width%3D320&f=1&nofb=1"
+      },
+
     ]
 
     return {
@@ -177,14 +184,16 @@ export class DatapaginaService {
           "Auditoria de Riezgos Informaticos",
           "Auditoria de Continuidad de Caidas",
           "Auditoria de Garantia de Eficiencia de Red",
-          "Seguridad de Plataformas"
+          "Seguridad de Plataformas",
+          "Auditoria de Control Interno"
         ],
         enlaces: [
           "/servicios#infraestructura",
           "/servicios#riezgo",
           "/servicios#continuidad",
           "/servicios#garantia",
-          "/servicios#seguridad"
+          "/servicios#seguridad",
+          "/servicios#control"
         ]
       },
       {
